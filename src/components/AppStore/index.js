@@ -3,6 +3,8 @@ import {Component} from 'react'
 import AppItem from '../AppItem'
 import TabItem from '../TabItem'
 
+import './index.css'
+
 const tabsList = [
   {tabId: 'SOCIAL', displayText: 'Social'},
   {tabId: 'GAMES', displayText: 'Games'},
@@ -306,6 +308,7 @@ class AppStore extends Component {
   onChangeSearchInput = event => {
     this.setState({searchInput: event.target.value})
   }
+
   getActiveTabId = searchApps => {
     const {activeTabId} = this.state
     const filterApps = searchApps.filter(
@@ -357,7 +360,7 @@ class AppStore extends Component {
           ))}
         </ul>
         <hr />
-        <ul>
+        <ul className="apps-list-data">
           {filterApps.map(eachApp => (
             <AppItem key={eachApp.appId} appDetails={eachApp} />
           ))}

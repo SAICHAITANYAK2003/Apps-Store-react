@@ -42,4 +42,5 @@ body {
 }
 .tablist-section-container {
   display: flex;
+  border-bottom: 2px solid #dfe2e5;
 }

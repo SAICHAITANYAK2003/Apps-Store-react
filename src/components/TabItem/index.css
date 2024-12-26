@@ -1,0 +1,23 @@
+.tab-items-container {
+  list-style-type: none;
+  width: 50%;
+}
+.active-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  height: 30px;
+  width: 90px;
+  font-size: 15px;
+  color: #2563eb;
+  border-bottom: 2px solid #2563eb;
+  font-weight: bold;
+}
+.normal-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  height: 30px;
+  width: 90px;
+  font-size: 15px;
+}

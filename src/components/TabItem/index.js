@@ -1,4 +1,6 @@
 // Write your code here
+import './index.css'
+
 const TabItem = props => {
   const {tabDetails, setActiveTabId, isActive} = props
   const {tabId, displayText} = tabDetails
@@ -7,7 +9,7 @@ const TabItem = props => {
     setActiveTabId(tabId)
   }
 
-  const btnClassName = isActive ? '' : ''
+  const btnClassName = isActive ? 'active-btn' : 'normal-btn'
 
   return (
     <li className="tab-items-container">
